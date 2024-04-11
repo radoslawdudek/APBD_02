@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyAppConsumer\\LegacyAppConsumer.csproj": {}
+    "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyAppTests\\LegacyAppTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyAppConsumer\\LegacyAppConsumer.csproj": {
+    "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyAppTests\\LegacyAppTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyAppConsumer\\LegacyAppConsumer.csproj",
-        "projectName": "LegacyAppConsumer",
-        "projectPath": "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyAppConsumer\\LegacyAppConsumer.csproj",
+        "projectUniqueName": "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyAppTests\\LegacyAppTests.csproj",
+        "projectName": "LegacyAppTests",
+        "projectPath": "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyAppTests\\LegacyAppTests.csproj",
         "packagesPath": "C:\\Users\\rados\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyAppConsumer\\obj\\",
+        "outputPath": "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyAppTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rados\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,6 +48,24 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

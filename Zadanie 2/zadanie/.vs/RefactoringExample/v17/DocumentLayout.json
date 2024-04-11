@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF5C1625-A05D-4526-A1E1-334F7C0E68BD}|LegacyAppTests\\LegacyAppTests.csproj|c:\\users\\rados\\desktop\\pjatk\\3 rok sem letni\\apbd\\apbd_02\\zadanie 2\\zadanie\\legacyapptests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF5C1625-A05D-4526-A1E1-334F7C0E68BD}|LegacyAppTests\\LegacyAppTests.csproj|solutionrelative:legacyapptests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72364726-3116-4019-A054-6E9AF98BB046}|LegacyApp\\LegacyApp.csproj|c:\\users\\rados\\desktop\\pjatk\\3 rok sem letni\\apbd\\apbd_02\\zadanie 2\\zadanie\\legacyapp\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72364726-3116-4019-A054-6E9AF98BB046}|LegacyApp\\LegacyApp.csproj|solutionrelative:legacyapp\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8924C743-B84E-4B77-8944-0E718815E1D0}|LegacyAppConsumer\\LegacyAppConsumer.csproj|c:\\users\\rados\\desktop\\pjatk\\3 rok sem letni\\apbd\\apbd_02\\zadanie 2\\zadanie\\legacyappconsumer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8924C743-B84E-4B77-8944-0E718815E1D0}|LegacyAppConsumer\\LegacyAppConsumer.csproj|solutionrelative:legacyappconsumer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyApp\\UserService.cs",
+              "RelativeDocumentMoniker": "LegacyApp\\UserService.cs",
+              "ToolTip": "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyApp\\UserService.cs",
+              "RelativeToolTip": "LegacyApp\\UserService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T17:51:32.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyAppTests\\UserServiceTest.cs",
+              "RelativeDocumentMoniker": "LegacyAppTests\\UserServiceTest.cs",
+              "ToolTip": "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyAppTests\\UserServiceTest.cs",
+              "RelativeToolTip": "LegacyAppTests\\UserServiceTest.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAmwCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T16:55:52.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyAppConsumer\\Program.cs",
+              "RelativeDocumentMoniker": "LegacyAppConsumer\\Program.cs",
+              "ToolTip": "C:\\Users\\rados\\Desktop\\PJATK\\3 rok sem letni\\APBD\\APBD_02\\Zadanie 2\\zadanie\\LegacyAppConsumer\\Program.cs",
+              "RelativeToolTip": "LegacyAppConsumer\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T16:52:30.3Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

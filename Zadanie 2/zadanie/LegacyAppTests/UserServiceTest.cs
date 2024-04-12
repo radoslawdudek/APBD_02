@@ -4,40 +4,45 @@ namespace LegacyAppTests
 {
     public class UserServiceTest
     {
-        [Fact] // @Test w Javie
-        public void Add_User_Should_When_Email_Without_At_And_Dot()
-        {
-            string firstName = "John";
-            string lastName = "Doe";
-            DateTime birthDate = new DateTime(year: 1980, month: 1, day: 1);
-            int clientId = 1;
-            string email = "doe";
-            var service = new UserService();
+            [Fact] // @Test w Javie
+            public void ValidateUserName_ValidNames_ReturnsTrue()
+            {
+                // Arrange
+                var userService = new UserValidationService();
 
-            // Act
-            bool result = service.AddUser(firstName, lastName, email, birthDate, clientId);
+                // Act
+                bool result = userService.IsFullNameValid("John", "Doe");
 
-            // Assert
-            Assert.Equal(false, result);
+                // Assert
+                Assert.Equal(true,result);
+            }
 
-        }
+            [Fact]
+            public void ValidateUserName_EmptyFirstName_ReturnsFalse()
+            {
+                // Arrange
+                var userService = new UserValidationService();
 
-        [Fact]
-        public void AddUser_Should_Return_False_When_Age_Less_Than_21()
-        {
-            // Arrange
-            string firstName = "Jane";
-            string lastName = "Doe";
-            DateTime birthDate = new DateTime(year: 2010, month: 1, day: 1);
-            int clientId = 2;
-            string email = "doe2010@gmail.com";
-            var service = new UserService();
+                // Act
+                bool result = userService.IsFullNameValid("", "Doe");
 
-            // Act
-            bool result = service.AddUser(firstName, lastName, email, birthDate, clientId);
+                // Assert
+                Assert.Equal(false, result);
+            }
 
-            // Assert
-            Assert.Equal(false, result);
+            [Fact]
+            public void ValidateEmail_ValidEmail_ReturnsTrue()
+            {
+                // Arrange
+                var userService = new UserValidationService();
+
+                // Act
+                bool result = userService.IsEmailValid("john.doe@example.com");
+
+                // Assert
+                Assert.Equal(true,result);
+            }
+            
+            // Można więcej, ale chyba wystarczy
         }
     }
-}

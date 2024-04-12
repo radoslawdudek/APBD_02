@@ -4,29 +4,33 @@ namespace LegacyApp
 {
     public class UserService
     {
+        private IClientRepository _clientRepository;
+        private ICreditService _creditService;
+        private UserValidationService _userValidationService;
+
+        public UserService()
+        {
+            _clientRepository = new ClientRepository();
+            _creditService = new UserCreditService();
+            _userValidationService = new UserValidationService();
+        }
+
+        public UserService(IClientRepository clientRepository, ICreditService creditService, UserValidationService userValidationService)
+        {
+            _clientRepository = clientRepository;
+            _creditService = creditService;
+            _userValidationService = userValidationService;
+        }
+
         public bool AddUser(string firstName, string lastName, string email, DateTime dateOfBirth, int clientId)
         {
-            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName))
-            {
-                return false;
-            }
-
-            if (!email.Contains("@") && !email.Contains("."))
-            {
-                return false;
-            }
-
-            var now = DateTime.Now;
-            int age = now.Year - dateOfBirth.Year;
-            if (now.Month < dateOfBirth.Month || (now.Month == dateOfBirth.Month && now.Day < dateOfBirth.Day)) age--;
-
-            if (age < 21)
-            {
-                return false;
-            }
-
-            var clientRepository = new ClientRepository();
-            var client = clientRepository.GetById(clientId);
+            if (!_userValidationService.IsFullNameValid(firstName, lastName)) return false;
+            
+            if (!_userValidationService.IsEmailValid(email)) return false;
+            
+            if (!_userValidationService.IsUserOldEnough(dateOfBirth)) return false;
+            
+            var client = _clientRepository.GetById(clientId);
 
             var user = new User
             {
@@ -36,35 +40,11 @@ namespace LegacyApp
                 FirstName = firstName,
                 LastName = lastName
             };
-
-            if (client.Type == "VeryImportantClient")
-            {
-                user.HasCreditLimit = false;
-            }
-            else if (client.Type == "ImportantClient")
-            {
-                using (var userCreditService = new UserCreditService())
-                {
-                    int creditLimit = userCreditService.GetCreditLimit(user.LastName, user.DateOfBirth);
-                    creditLimit = creditLimit * 2;
-                    user.CreditLimit = creditLimit;
-                }
-            }
-            else
-            {
-                user.HasCreditLimit = true;
-                using (var userCreditService = new UserCreditService())
-                {
-                    int creditLimit = userCreditService.GetCreditLimit(user.LastName, user.DateOfBirth);
-                    user.CreditLimit = creditLimit;
-                }
-            }
-
-            if (user.HasCreditLimit && user.CreditLimit < 500)
-            {
-                return false;
-            }
-
+            
+            _userValidationService.DetermineCreditLimit(user, client, _creditService);
+            
+            if (!_userValidationService.IsCreditLimitValid(user)) return false;
+            
             UserDataAccess.AddUser(user);
             return true;
         }

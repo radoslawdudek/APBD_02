@@ -10,3 +10,15 @@
 /Users/pgago/Projects/PJATK/classes-materials/APBD/lecture_3/zadanie/LegacyApp/obj/Debug/net8.0/refint/LegacyApp.dll
 /Users/pgago/Projects/PJATK/classes-materials/APBD/lecture_3/zadanie/LegacyApp/obj/Debug/net8.0/LegacyApp.pdb
 /Users/pgago/Projects/PJATK/classes-materials/APBD/lecture_3/zadanie/LegacyApp/obj/Debug/net8.0/ref/LegacyApp.dll
+C:\Users\rados\Desktop\PJATK\3 rok sem letni\APBD\APBD_02\Zadanie 2\zadanie\LegacyApp\bin\Debug\net8.0\LegacyApp.deps.json
+C:\Users\rados\Desktop\PJATK\3 rok sem letni\APBD\APBD_02\Zadanie 2\zadanie\LegacyApp\bin\Debug\net8.0\LegacyApp.dll
+C:\Users\rados\Desktop\PJATK\3 rok sem letni\APBD\APBD_02\Zadanie 2\zadanie\LegacyApp\bin\Debug\net8.0\LegacyApp.pdb
+C:\Users\rados\Desktop\PJATK\3 rok sem letni\APBD\APBD_02\Zadanie 2\zadanie\LegacyApp\obj\Debug\net8.0\LegacyApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rados\Desktop\PJATK\3 rok sem letni\APBD\APBD_02\Zadanie 2\zadanie\LegacyApp\obj\Debug\net8.0\LegacyApp.AssemblyInfoInputs.cache
+C:\Users\rados\Desktop\PJATK\3 rok sem letni\APBD\APBD_02\Zadanie 2\zadanie\LegacyApp\obj\Debug\net8.0\LegacyApp.AssemblyInfo.cs
+C:\Users\rados\Desktop\PJATK\3 rok sem letni\APBD\APBD_02\Zadanie 2\zadanie\LegacyApp\obj\Debug\net8.0\LegacyApp.csproj.CoreCompileInputs.cache
+C:\Users\rados\Desktop\PJATK\3 rok sem letni\APBD\APBD_02\Zadanie 2\zadanie\LegacyApp\obj\Debug\net8.0\LegacyApp.sourcelink.json
+C:\Users\rados\Desktop\PJATK\3 rok sem letni\APBD\APBD_02\Zadanie 2\zadanie\LegacyApp\obj\Debug\net8.0\LegacyApp.dll
+C:\Users\rados\Desktop\PJATK\3 rok sem letni\APBD\APBD_02\Zadanie 2\zadanie\LegacyApp\obj\Debug\net8.0\refint\LegacyApp.dll
+C:\Users\rados\Desktop\PJATK\3 rok sem letni\APBD\APBD_02\Zadanie 2\zadanie\LegacyApp\obj\Debug\net8.0\LegacyApp.pdb
+C:\Users\rados\Desktop\PJATK\3 rok sem letni\APBD\APBD_02\Zadanie 2\zadanie\LegacyApp\obj\Debug\net8.0\ref\LegacyApp.dll
